@@ -17,7 +17,11 @@ print("John was born in: ", 2023 - Age_of_user)
 user.update([("skills", ["Python" , "QA" , "Selenium"])])
 print("Updated John's skills: ", user)
 # 5) Sort john's friends
-
+friends = user.get("friends")
+friends.sort()
+print(friends)
+user.update([("friends", friends)])
+print(user)
 # 6) After sort find index position of "Bob"
 
 # 7) Add new friends to friends : "Taras" , "Danya" , "Bidden"
